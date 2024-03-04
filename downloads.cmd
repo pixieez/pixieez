@@ -40,7 +40,7 @@ if %userChoice%==9 goto EndScript
 set /p pixie_dir="Directory: "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x1 -o rJQBBm12.zip -d "%pixie_dir%" https://pd.cybar.xyz/rJQBBm12
+aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o rJQBBm12.zip -d "%pixie_dir%" https://pd.cybar.xyz/rJQBBm12
 del aria2c.exe
 cd /d %pixie_dir%
 start "" "rJQBBm12.zip"
