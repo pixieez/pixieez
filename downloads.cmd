@@ -21,7 +21,7 @@ echo:
 echo:         [1] Secrets Of Grindea (v0.99xx)(id=269770)  ^|  Steam ^|         (Download)
 echo:         ________________________________________________________________
 echo:
-echo:         [4] Secrets Of Grindea (v0.99xx)(id=269770)  ^|  Steam ^|         (Download)
+echo:         [4] FakeAppID 629520 ^|  Steam ^|         (SteamClient)
 echo:         
 echo:         [0] Exit
 echo:     ________________________________________________________________________ 
