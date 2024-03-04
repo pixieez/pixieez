@@ -35,8 +35,11 @@ if %userChoice%==9 goto EndScript
 
 :Download1
 set /p pixie_dir="Directory: "
-curl -o %temp%\aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
-start %temp%aria2c -x10 -o 8iAq2itk.zip -d %pixie_dir% https://pd.cybar.xyz/8iAq2itk
+curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
+cd /d %temp%
+aria2c -x10 -o 8iAq2itk.zip -d "%pixie_dir%" https://pd.cybar.xyz/8iAq2itk
+cd /d %pixie_dir%
+start "" "8iAq2itk.zip"
 
 pause >nul
 goto MainMenu
