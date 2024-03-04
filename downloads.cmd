@@ -19,7 +19,8 @@ echo:                              developed by pixieez1
 echo:     ________________________________________________________________________ 
 echo:      Request
 echo:
-echo:         [1] Secrets Of Grindea (v0.99xx)(id=269770) ^| Steam ^|  Download
+echo:         [1] Wizard with a Gun  (13262001) (id=1150530) ^| Steam ^|  Download
+echo:         [2] Secrets Of Grindea (v0.99xx)  (id=269770)  ^| Steam ^|  Download
 echo:         ________________________________________________________________
 echo:
 echo:         [4] FakeAppID 638490
@@ -27,7 +28,7 @@ echo:
 echo:         [0] Exit
 echo:     ________________________________________________________________________ 
 echo.
-echo:     Enter a menu option in the Keyboard [1,4,0] :
+echo:     Enter a menu option in the Keyboard [1,2,4,0] :
 choice /C:123456780 /N
 set "userChoice=%errorlevel%"
 
@@ -41,11 +42,22 @@ if %userChoice%==9 goto EndScript
 set /p pixie_dir="Directory: "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
+aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o WeCHCuTL.zip -d "%pixie_dir%" https://pd.cybar.xyz/WeCHCuTL
+del aria2c.exe
+cd /d %pixie_dir%
+start "" "WeCHCuTL.zip"
+pause
+goto MainMenu
+
+
+:Download2
+set /p pixie_dir="Directory: "
+curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
+cd /d %temp%
 aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o rJQBBm12.zip -d "%pixie_dir%" https://pd.cybar.xyz/rJQBBm12
 del aria2c.exe
 cd /d %pixie_dir%
 start "" "rJQBBm12.zip"
-
 pause
 goto MainMenu
 
