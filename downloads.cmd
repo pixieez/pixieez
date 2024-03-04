@@ -18,9 +18,11 @@ echo:                               Welcome to PiXiE-EZ
 echo:                              developed by pixieez1
 echo:     ________________________________________________________________________ 
 echo:
-echo:         [1] Secrets Of Grindea (v0.99xx)    ^|  Steam ^|         (Download)
+echo:         [1] Secrets Of Grindea (v0.99xx)(id=269770)  ^|  Steam ^|         (Download)
 echo:         ________________________________________________________________
 echo:
+echo:         [4] Secrets Of Grindea (v0.99xx)(id=269770)  ^|  Steam ^|         (Download)
+echo:         
 echo:         [0] Exit
 echo:     ________________________________________________________________________ 
 echo.
@@ -31,6 +33,7 @@ set "userChoice=%errorlevel%"
 if %userChoice%==1 goto Download1
 if %userChoice%==2 goto Download2
 if %userChoice%==3 goto Download3
+if %userChoice%==4 goto FakeappID
 if %userChoice%==9 goto EndScript
 
 :Download1
@@ -43,6 +46,11 @@ cd /d %pixie_dir%
 start "" "2RNEddjg.zip"
 
 pause
+goto MainMenu
+
+:FakeappID
+start "" "steam://install/629520/"
+pause >nul
 goto MainMenu
 
 :EndScript
