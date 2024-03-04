@@ -31,13 +31,12 @@ set "userChoice=%errorlevel%"
 if %userChoice%==1 goto Download1
 if %userChoice%==2 goto Download2
 if %userChoice%==3 goto Download3
-if %userChoice%==0 goto EndScript
+if %userChoice%==9 goto EndScript
 
 :Download1
-
 bitsadmin /transfer "infertraindwnl" /download /priority FOREGROUND "https://pd.cybar.xyz/8iAq2itk" "%temp%\%~dp08iAq2itk.zip"
-
 pause >nul
 goto MainMenu
+
 :EndScript
 echo Exiting script...
