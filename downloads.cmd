@@ -41,7 +41,7 @@ aria2c -x10 -o 8iAq2itk.zip -d "%pixie_dir%" https://pd.cybar.xyz/8iAq2itk
 cd /d %pixie_dir%
 start "" "8iAq2itk.zip"
 
-pause >nul
+pause
 goto MainMenu
 
 :EndScript
