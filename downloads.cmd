@@ -1,5 +1,5 @@
 @echo off
-set ver=1.0 BETA
+set ver=0.1 BETA
 
 REM Run as admin
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd","/c %~s0 ::","","runas",1)(window.close) && exit
