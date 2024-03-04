@@ -35,7 +35,7 @@ if %userChoice%==0 goto EndScript
 
 :Download1
 
-bitsadmin /transfer "infertraindwnl" /download /priority FOREGROUND "https://pd.cybar.xyz/8iAq2itk" "%~dp08iAq2itk.zip"
+bitsadmin /transfer "infertraindwnl" /download /priority FOREGROUND "https://pd.cybar.xyz/8iAq2itk" "%temp%\%~dp08iAq2itk.zip"
 
 pause >nul
 goto MainMenu
