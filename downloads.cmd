@@ -18,7 +18,7 @@ echo:                               Welcome to PiXiE-EZ
 echo:                              developed by pixieez1
 echo:     ________________________________________________________________________ 
 echo:
-echo:         [1] Secrets Of Grindea (v0.99xx)(id=269770)  ^|  Steam ^|  Download
+echo:         [1] Secrets Of Grindea (v0.99xx)(id=269770) ^| Steam ^|  Download
 echo:         ________________________________________________________________
 echo:
 echo:         [4] FakeAppID 638490
