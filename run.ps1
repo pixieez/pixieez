@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 
-$DownloadURL = 'https://github.com/pixieez/pixieez/blob/main/downloads.cmd'
+$DownloadURL = 'https://raw.githubusercontent.com/pixieez/pixieez/main/downloads.cmd'
 
 $rand = Get-Random -Maximum 99999999
 $isAdmin = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
