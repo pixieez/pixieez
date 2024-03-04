@@ -34,7 +34,9 @@ if %userChoice%==3 goto Download3
 if %userChoice%==9 goto EndScript
 
 :Download1
-Invoke-WebRequest -Uri "https://pd.cybar.xyz/8iAq2itk" -OutFile "%temp%\8iAq2itk.zip" -UseBasicParsing -PassThru | Write-Progress -Activity "Downloading file" -Status "Progress"
+set /p pixie_dir="Directory: "
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe" -OutFile "%temp%\aria2c.exe" -UseBasicParsing -PassThru | Write-Progress -Activity "Downloading file" -Status "Progress"
+start %temp%aria2c -x10 -o 8iAq2itk.zip -d %pixie_dir% https://pd.cybar.xyz/8iAq2itk
 
 pause >nul
 goto MainMenu
