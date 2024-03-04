@@ -1,6 +1,6 @@
 @echo off
 set ver=0.1 BETA
-color 05
+color 0D
 REM Run as admin
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd","/c %~s0 ::","","runas",1)(window.close) && exit
 cd /d "%~dp0"
