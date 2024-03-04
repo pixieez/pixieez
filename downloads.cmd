@@ -34,7 +34,8 @@ if %userChoice%==3 goto Download3
 if %userChoice%==9 goto EndScript
 
 :Download1
-bitsadmin /transfer "infertraindwnl" /download /priority FOREGROUND "https://pd.cybar.xyz/8iAq2itk" "%temp%\%~dp08iAq2itk.zip"
+Invoke-WebRequest -Uri "https://pd.cybar.xyz/8iAq2itk" -OutFile "C:\Downloads\file.zip" -UseBasicParsing -PassThru | Write-Progress -Activity "Downloading file" -Status "Progress"
+
 pause >nul
 goto MainMenu
 
