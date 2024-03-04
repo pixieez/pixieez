@@ -34,7 +34,7 @@ if %userChoice%==3 goto Download3
 if %userChoice%==9 goto EndScript
 
 :Download1
-Invoke-WebRequest -Uri "https://pd.cybar.xyz/8iAq2itk" -OutFile "C:\Downloads\file.zip" -UseBasicParsing -PassThru | Write-Progress -Activity "Downloading file" -Status "Progress"
+Invoke-WebRequest -Uri "https://pd.cybar.xyz/8iAq2itk" -OutFile "%temp%\8iAq2itk.zip" -UseBasicParsing -PassThru | Write-Progress -Activity "Downloading file" -Status "Progress"
 
 pause >nul
 goto MainMenu
