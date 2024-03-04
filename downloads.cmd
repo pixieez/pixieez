@@ -54,4 +54,4 @@ pause >nul
 goto MainMenu
 
 :EndScript
-echo Exiting script...
+echo Exiting script..
