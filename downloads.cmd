@@ -21,12 +21,12 @@ echo:
 echo:         [1] Secrets Of Grindea (v0.99xx)(id=269770)  ^|  Steam ^|  Download
 echo:         ________________________________________________________________
 echo:
-echo:         [4] FakeAppID 629520
+echo:         [4] FakeAppID 638490
 echo:         
 echo:         [0] Exit
 echo:     ________________________________________________________________________ 
 echo.
-echo:     Enter a menu option in the Keyboard [1,0] :
+echo:     Enter a menu option in the Keyboard [1,4,0] :
 choice /C:123456780 /N
 set "userChoice=%errorlevel%"
 
@@ -49,7 +49,7 @@ pause
 goto MainMenu
 
 :FakeappID
-start "" "steam://install/629520/"
+start "" "steam://install/638490/"
 pause >nul
 goto MainMenu
 
