@@ -27,7 +27,7 @@ echo:         [4] FakeAppID 638490
 echo:         
 echo:         [0] Exit
 echo:     ________________________________________________________________________ 
-echo:                                  © 2024 | PiXiE
+echo:                                  © 2024 ^| PiXiE
 echo.
 echo:     Enter a menu option in the Keyboard [1,2,4,0] :
 choice /C:123456780 /N
