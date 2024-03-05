@@ -41,7 +41,7 @@ if %userChoice%==9 goto EndScript
 :Download1
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
-set /p pixie_dir="  Directory: "
+set /p pixie_dir="  path:  "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
 aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o WeCHCuTL.zip -d "%pixie_dir%" https://pd.cybar.xyz/WeCHCuTL
@@ -55,7 +55,7 @@ goto MainMenu
 :Download2
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
-set /p pixie_dir="  Directory: "
+set /p pixie_dir="  path:  "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
 aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o Setup.Secrets.Of.Grindea.exe -d "%pixie_dir%" https://pd.cybar.xyz/KU2nXm5w
