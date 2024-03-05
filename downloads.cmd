@@ -22,7 +22,7 @@ echo:
 echo:         [1] Wizard with a Gun  (13262001) (id=1150530) ^| Steam ^|  Download
 echo:         [2] Secrets Of Grindea (v1.00a)   (id=269770)  ^| Steam ^|  Download
 echo:         ________________________________________________________________
-echo:
+echo.
 echo:         [4] FakeAppID 638490
 echo:         
 echo:         [0] Exit
@@ -39,7 +39,9 @@ if %userChoice%==4 goto FakeappID
 if %userChoice%==9 goto EndScript
 
 :Download1
-set /p pixie_dir="Directory: "
+echo.
+echo:  please set your path.
+set /p pixie_dir="  Directory: "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
 aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o WeCHCuTL.zip -d "%pixie_dir%" https://pd.cybar.xyz/WeCHCuTL
@@ -51,7 +53,9 @@ goto MainMenu
 
 
 :Download2
-set /p pixie_dir="Directory: "
+echo.
+echo:  please set your path.
+set /p pixie_dir="  Directory: "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
 aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o Setup.Secrets.Of.Grindea.exe -d "%pixie_dir%" https://pd.cybar.xyz/KU2nXm5w
