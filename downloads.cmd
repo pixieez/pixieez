@@ -45,10 +45,10 @@ echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o WeCHCuTL.zip -d "%pixie_dir%" https://pd.cybar.xyz/WeCHCuTL
+aria2c --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" https://pd.cybar.xyz/ahA3xzUz
 del aria2c.exe
 cd /d %pixie_dir%
-start "" "WeCHCuTL.zip"
+start "" "Setup.wizard.with.a.gun.exe"
 pause
 goto MainMenu
 
