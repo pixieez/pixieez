@@ -45,7 +45,7 @@ echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 2 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" https://pd.cybar.xyz/ahA3xzUz
+aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 2 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" https://pd.cybar.xyz/dE3LLo2R
 del aria2c.exe
 cd /d %pixie_dir%
 echo.
