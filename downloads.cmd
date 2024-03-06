@@ -48,7 +48,24 @@ cd /d %temp%
 aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 2 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" https://pd.cybar.xyz/ahA3xzUz
 del aria2c.exe
 cd /d %pixie_dir%
+echo.
+echo.
+echo: Download Complete!
 start "" "Setup.wizard.with.a.gun.exe"
+echo.
+@echo off
+set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
+
+echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
+echo sLinkFile = "%USERPROFILE%\Desktop\Wizard With a Gun.lnk" >> %SCRIPT%
+echo Set oLink = oWS.CreateShortcut(sLinkFile) >> %SCRIPT%
+echo oLink.TargetPath = "%CD%\Wizard with a Gun\wizardwithagun.exe" >> %SCRIPT%
+echo oLink.IconLocation = "%CD%\Wizard with a Gun\wizardwithagun.exe, 0" >> %SCRIPT%
+echo oLink.Save >> %SCRIPT%
+
+cscript /nologo %SCRIPT%
+del %SCRIPT%
+
 pause
 goto MainMenu
 
