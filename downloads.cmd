@@ -45,7 +45,7 @@ echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 2 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" https://pd.cybar.xyz/dE3LLo2R
+aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" https://pd.cybar.xyz/dE3LLo2R
 del aria2c.exe
 cd /d %pixie_dir%
 echo.
@@ -77,7 +77,7 @@ echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 2 -c -s 16 -k 1M -o Setup.Secrets.Of.Grindea.exe -d "%pixie_dir%" https://pd.cybar.xyz/KU2nXm5w
+aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 1 -c -s 16 -k 1M -o Setup.Secrets.Of.Grindea.exe -d "%pixie_dir%" https://pd.cybar.xyz/KU2nXm5w
 del aria2c.exe
 cd /d %pixie_dir%
 start "" "Setup.Secrets.Of.Grindea.exe"
