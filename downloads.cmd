@@ -45,7 +45,7 @@ echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
 curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
 cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 8 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" "https://gateway.storjshare.io/wizard.with.a.gun/Setup.wizard.with.a.gun.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=jv5vndbnsgnm2mg6hnxi2tlradaq%2F20240306%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240306T161859Z&X-Amz-Expires=900&X-Amz-Signature=84ce6a3339f8621770839c40e63b3bf7858995b9f3ea91ec9193296898b0c9e9&X-Amz-SignedHeaders=host&x-id=GetObject"
+aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 8 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" "https://link.storjshare.io/s/jxnp3jb6btwcxzlpk3lnlhhyw3ya/wizard.with.a.gun%2FSetup.wizard.with.a.gun.exe?download=1"
 del aria2c.exe
 cd /d %pixie_dir%
 echo.
