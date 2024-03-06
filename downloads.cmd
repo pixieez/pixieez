@@ -50,7 +50,8 @@ del aria2c.exe
 cd /d %pixie_dir%
 echo.
 echo.
-echo: Download Complete!
+echo: Download Complete! ^| Wait for Unpack..
+echo: When finished unpacking, you can close the page or enter to go to the main menu.
 start "" "Setup.wizard.with.a.gun.exe"
 echo.
 @echo off
