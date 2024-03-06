@@ -51,7 +51,7 @@ cd /d %pixie_dir%
 echo.
 echo.
 echo: Download Complete! ^| Wait for Unpack..
-echo: When finished unpacking, you can close the page or enter to go to the main menu.
+echo: When finished unpacking, you can close the console or 'Enter' to go to the main menu.
 start "" "Setup.wizard.with.a.gun.exe"
 echo.
 @echo off
