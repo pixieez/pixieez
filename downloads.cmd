@@ -47,11 +47,11 @@ set /p pixie_dir="  path:  "
 set "url1=https://pd.cybar.xyz/dE3LLo2R"
 for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url1%"') do set "avg_speed=%%i"
 echo %avg_speed%
-cd /d %pixie_dir%
 echo.
 echo.
 echo: Download Complete! ^| Wait for Unpack..
 echo: When finished unpacking, you can close the console or 'Enter' to go to the main menu.
+cd /d %pixie_dir%
 start "" "Setup.wizard.with.a.gun.exe"
 echo.
 @echo off
