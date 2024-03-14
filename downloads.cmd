@@ -44,8 +44,8 @@ echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
 @echo off
-set "url1=https://pd.cybar.xyz/dE3LLo2R"
-for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url1%"') do set "avg_speed=%%i"
+set "url=https://pd.cybar.xyz/dE3LLo2R"
+for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url%"') do set "avg_speed=%%i"
 echo %avg_speed%
 echo.
 echo.
