@@ -43,9 +43,9 @@ if %userChoice%==9 goto EndScript
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p dir="  path:  "
+echo:  Silent Download...
 @echo off
 set "url=https://pd.cybar.xyz/dE3LLo2R"
-echo:  Silent Download...
 for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%dir%/Setup.wizard.with.a.gun.exe" "%url%"') do set "avg_speed=%%i"
 echo %avg_speed%
 echo.
