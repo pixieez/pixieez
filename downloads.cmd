@@ -42,10 +42,10 @@ if %userChoice%==9 goto EndScript
 :Download1
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
-set /p pixie_dir="  path:  "
+set /p dir="  path:  "
 @echo off
 set "url=https://pd.cybar.xyz/dE3LLo2R"
-for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url%"') do set "avg_speed=%%i"
+for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%dir%/Setup.wizard.with.a.gun.exe" "%url%"') do set "avg_speed=%%i"
 echo %avg_speed%
 echo.
 echo.
