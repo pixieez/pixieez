@@ -20,7 +20,7 @@ echo:     ______________________________________________________________________
 echo:      Request
 echo:
 echo:         [1] Wizard with a Gun  (13262001) (id=1150530) ^| Steam ^|  Download
-echo:         [2] Secrets Of Grindea (v1.00a)   (id=269770)  ^| Steam ^|  Download
+echo:         [ ] Secrets Of Grindea (v1.00a)   (id=269770)  ^| Steam ^|  Download
 echo:         ________________________________________________________________
 echo.
 echo:         [4] FakeAppID 638490
@@ -29,7 +29,7 @@ echo:         [0] Exit
 echo:     ________________________________________________________________________ 
 echo:                                   2024 ^| PiXiE
 echo.
-echo:     Enter a menu option in the Keyboard [1,2,4,0] :
+echo:     Enter a menu option in the Keyboard [1,4,0] :
 choice /C:123456780 /N
 set "userChoice=%errorlevel%"
 
@@ -71,7 +71,7 @@ pause
 goto MainMenu
 
 
-:Download2
+:Download999
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
