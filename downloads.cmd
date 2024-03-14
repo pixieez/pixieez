@@ -43,10 +43,10 @@ if %userChoice%==9 goto EndScript
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
-curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
-cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 8 -c -s 16 -k 1M -o Setup.wizard.with.a.gun.exe -d "%pixie_dir%" "https://link.storjshare.io/s/jxnp3jb6btwcxzlpk3lnlhhyw3ya/wizard.with.a.gun%2FSetup.wizard.with.a.gun.exe?download=1"
-del aria2c.exe
+@echo off
+set "url1=https://pd.cybar.xyz/dE3LLo2R"
+for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url1%"') do set "avg_speed=%%i"
+echo %avg_speed%
 cd /d %pixie_dir%
 echo.
 echo.
@@ -76,8 +76,8 @@ echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
 @echo off
-set "url1=https://pd.cybar.xyz/dE3LLo2R"
-for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url1%"') do set "avg_speed=%%i"
+set "url2=https://pd.cybar.xyz/dE3LLo2R"
+for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url2%"') do set "avg_speed=%%i"
 echo %avg_speed%
 cd /d %temp%
 cd /d %pixie_dir%
