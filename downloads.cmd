@@ -75,10 +75,11 @@ goto MainMenu
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
 set /p pixie_dir="  path:  "
-curl -o %temp%/aria2c.exe https://raw.githubusercontent.com/pixieez/pixieez/main/aria2c.exe
+@echo off
+set "url1=https://pd.cybar.xyz/dE3LLo2R"
+for /f %%i in ('curl --progress-bar -L -s -w "%%{speed_download}" -o "%pixie_dir%" "%url1%"') do set "avg_speed=%%i"
+echo %avg_speed%
 cd /d %temp%
-aria2c --user-agent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" --file-allocation prealloc -x 8 -c -s 16 -k 1M -o Setup.Secrets.Of.Grindea.exe -d "%pixie_dir%" https://pd.cybar.xyz/KU2nXm5w
-del aria2c.exe
 cd /d %pixie_dir%
 start "" "Setup.Secrets.Of.Grindea.exe"
 pause
