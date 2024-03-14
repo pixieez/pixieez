@@ -6,16 +6,16 @@ REM Run as admin
 cd /d "%~dp0"
 taskkill /IM powershell.exe /F
 
-title PiXiE-EZ V%ver%
+title Alpha2 V%ver%
 
 :MainMenu
 cls
-title PiXiE-EZ V%ver%
+title Alpha2 V%ver%
 mode 82, 25
 echo:     ________________________________________________________________________
 echo:
 echo:                                      Welcome
-echo:                              developed by pixieez1
+echo:                              developed by Alpha2
 echo:     ________________________________________________________________________ 
 echo:      Request
 echo:
@@ -27,7 +27,7 @@ echo:         [4] FakeAppID 638490
 echo:         
 echo:         [0] Exit
 echo:     ________________________________________________________________________ 
-echo:                                   2024 ^| PiXiE
+echo:                                   2024 ^| Alpha2
 echo.
 echo:     Enter a menu option in the Keyboard [1,4,0] :
 choice /C:123456780 /N
