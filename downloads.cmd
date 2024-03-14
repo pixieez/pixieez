@@ -42,7 +42,7 @@ if %userChoice%==9 goto EndScript
 :Download1
 echo.
 echo:  please set your path (e.g. : [D:\Games] or etc.)
-set /p dir="  path:  "
+set /p dir="--!path:  "
 echo:  Silent Download...
 @echo off
 set "url=https://pd.cybar.xyz/dE3LLo2R"
